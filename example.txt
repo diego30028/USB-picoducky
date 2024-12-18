@@ -1,0 +1,7 @@
+    #put this in payload()
+    
+    time.sleep(0.1)
+    keyboard.send(Keycode.GUI, Keycode.R)
+    time.sleep(0.5)
+    write_text.write("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    keyboard.send(Keycode.ENTER)
