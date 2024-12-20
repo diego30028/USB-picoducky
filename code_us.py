@@ -1,4 +1,5 @@
 import time
+import pwmio
 import board
 import digitalio
 import usb_hid
@@ -7,14 +8,9 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
-time.sleep(2.5)
-# Set up Consumer Control - Control Codes can be found here: https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/consumer_control_code.html#ConsumerControlCode
 cc = ConsumerControl(usb_hid.devices)
-
-# Set up a keyboard device. - Keycode can be found here: https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html#Keycode
+led = pwmio.PWMOut(board.LED)
 keyboard = Keyboard(usb_hid.devices)
-
-# Set up keyboard to write strings from macro
 write_text = KeyboardLayoutUS(keyboard)
 
 
@@ -30,11 +26,13 @@ def payload():
 
 
     
-    
-    # Keycode class defines USB HID keycodes to send using Keyboard.  
+     
 if btn1.value:
-   print("edit mode")
+    led.duty_cycle = 2 ** 15
+    time.sleep(1)
 else:
+    time.sleep(2.5)
+    led.duty_cycle = 2 ** 15
     payload()
         
     
