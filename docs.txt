@@ -1,0 +1,70 @@
+hi, this file is gonna teach you about all the types of comands you can use to create a payload
+//sending individual keys
+  keyboard.send(Keycode.a) = a                                                        
+  keyboard.send(Keycode.b) = b                                                       
+  keyboard.send(Keycode.c) = c                                                       
+  keyboard.send(Keycode.d) = d                                                      
+  keyboard.send(Keycode.e) = e                                                       
+  keyboard.send(Keycode.f) = f                                                       
+  keyboard.send(Keycode.g) = g                                                       
+  keyboard.send(Keycode.h) = h                                                        
+  keyboard.send(Keycode.i) = i                                                        
+  keyboard.send(Keycode.j) = j                                                        
+  keyboard.send(Keycode.k) = k                                                        
+  keyboard.send(Keycode.l) = l                                                       
+  keyboard.send(Keycode.m) = m                                                        
+  keyboard.send(Keycode.n) = n                                                        
+//keyboard.send(Keycode.ñ) = ñ  WARNING:this key can work only with spanish layout    
+  keyboard.send(Keycode.o) = o                                                        
+  keyboard.send(Keycode.p) = p                                                       
+  keyboard.send(Keycode.q) = q                                                        
+  keyboard.send(Keycode.r) = r                                                        
+  keyboard.send(Keycode.s) = s                                                        
+  keyboard.send(Keycode.t) = t                                                        
+  keyboard.send(Keycode.u) = u                                                       
+  keyboard.send(Keycode.v) = v                                                      
+  keyboard.send(Keycode.w) = w                                                        
+  keyboard.send(Keycode.x) = x                                                        
+  keyboard.send(Keycode.y) = y                                                        
+  keyboard.send(Keycode.z) = z                                                        
+  //sending special keys
+  keyboard.send(Keycode.GUI) = windows key
+  keyboard.send(Keycode.SHIFT) = shift
+  keyboard.send(Keycode.DOWN_ARROW) = down arrow
+  keyboard.send(Keycode.LEFT_ARROW) = left arrow
+  keyboard.send(Keycode.UP_ARROW) = up arrow
+  keyboard.send(Keycode.RIGHT_ARROW) = right arrow
+  keyboard.send(Keycode.CONTROL) = conntrol,ctrl
+  keyboard.send(Keycode.DELETE) = delete,del
+  keyboard.send(Keycode.ALT) = atl
+  keyboard.send(Keycode.PAUSE) = pause the keyboard signal,break
+  keyboard.send(Keycode.CAPS_LOCK) = lock capital letters,caps lock
+  keyboard.send(Keycode.END) = end
+  keyboard.send(Keycode.HOME) = home
+  keyboard.send(Keycode.KEYPAD_NUMLOCK) = keypad numlock
+  keyboard.send(Keycode.PAGE_UP) = page up
+  keyboard.send(Keycode.PAGE_DOWN) = page down
+  keyboard.send(Keycode.PRINT_SCREEN) = print screen
+  keyboard.send(Keycode.ENTER) = enter
+  keyboard.send(Keycode.SPACE) = space
+  keyboard.send(Keycode.TAB) = tab
+  keyboard.send(Keycode.BACKSPACE) = backspace
+  keyboard.send(Keycode.F1) = F1
+  keyboard.send(Keycode.F2) = F2
+  keyboard.send(Keycode.F3) = F3
+  keyboard.send(Keycode.F4) = F4
+  keyboard.send(Keycode.F5) = F5
+  keyboard.send(Keycode.F6) = F6
+  keyboard.send(Keycode.F7) = F7
+  keyboard.send(Keycode.F8) = F8
+  keyboard.send(Keycode.F9) = F9
+  keyboard.send(Keycode.F10) = F10
+  keyboard.send(Keycode.F11) = F11
+  keyboard.send(Keycode.F12) = F12
+  //type multiple keys at the same time
+  keyboard.send(Keycode.key1,keycode.key2,...)
+  example:
+  keyboard.send(Keycode.GUI,keycode.R) = windows + r open execute window
+  //type strings
+  write_text.write("type your sentece here")
+  
